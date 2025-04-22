@@ -6,10 +6,9 @@ import os
 import random
 from datetime import datetime, timedelta
 import sys
-sys.path.append('/opt/airflow/custom_modules')  # Fixed typo
-from custom_modules.linkedin_generator import LinkedInAgentSystem
-from custom_modules.azure_storage import AzureBlobStorage
-from custom_modules.linkedin_api import LinkedinAPIClient
+from linkedin_generator import LinkedInAgentSystem
+from azure_storage import AzureBlobStorage
+from linkedin_api import LinkedinAPIClient
 
 default_args = {
     'owner': 'airflow',
